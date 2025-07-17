@@ -56,7 +56,7 @@ I uploaded some test images to my inbox-bucket (only jpg and png possible with R
 
 Here You can see the content of the verified bucket. There's a flaw: Altough there is a picture called "violence" (image of strangling) it has been moved to the verified bucket. So it's still a machine which can make mistakes. 
 
-![Architecture Diagram]([assets/content of verified s3.png](https://github.com/Kati-Sauder/Smart-S3-Upload-Scanner-with-Alerting/blob/main/assets/content%20of%20verified%20s3.png))
+![Architecture Diagram](https://github.com/Kati-Sauder/Smart-S3-Upload-Scanner-with-Alerting/blob/main/assets/content%20of%20verified%20s3.png)
 
 And here the content of the quarantined bucket.
 
@@ -71,15 +71,15 @@ This defines how confident Rekognition must be before labeling content as inappr
 
 So there's definitely a risk of false positives but also the risk of unsafe content "passing through". This tool is an awesome way to filter but if you want to be 100% sure about uploaded content, do a manual check. SNS alerts help with that, so you won't miss any new uploaded content. 
 
-![Architecture Diagram]([assets/content of quarantined s3.png](https://github.com/Kati-Sauder/Smart-S3-Upload-Scanner-with-Alerting/blob/main/assets/content%20of%20quarantined%20s3.png))
+![Architecture Diagram](https://github.com/Kati-Sauder/Smart-S3-Upload-Scanner-with-Alerting/blob/main/assets/content%20of%20quarantined%20s3.png)
 
 Under properties, you can see the metadata of all objects in the bucket. It shows the labels Rekognition has given each image. 
 
-![Architecture Diagram]([assets/metadata of object in bucket.png](https://github.com/Kati-Sauder/Smart-S3-Upload-Scanner-with-Alerting/blob/main/assets/metadata%20of%20object%20in%20bucket.png))
+![Architecture Diagram](https://github.com/Kati-Sauder/Smart-S3-Upload-Scanner-with-Alerting/blob/main/assets/metadata%20of%20object%20in%20bucket.png)
 
 Triggered SNS alert because  of problematic content found in a bucket. 
 
-![Architecture Diagram]([assets/sns alert email.png](https://github.com/Kati-Sauder/Smart-S3-Upload-Scanner-with-Alerting/blob/main/assets/sns%20alert%20email.png))
+![Architecture Diagram](https://github.com/Kati-Sauder/Smart-S3-Upload-Scanner-with-Alerting/blob/main/assets/sns%20alert%20email.png)
 
 ## ⚙️ Simplified Deployment Guide
 
